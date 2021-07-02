@@ -32,6 +32,14 @@ En raison de manque de temps, seul une partie de ce jeu de donn√©es sera utilis√
 
 ## Installation
 
+
+
+      
+          
+      
+
+  
+
 Installer Anaconda
 
 Installer vscode
