@@ -48,29 +48,28 @@ code
 
 Charger la classe entrainement_sans_data_augmentation.ipynb
 
-Cliquer sur la double flèche (ou le bouton "Run all" sur la version la plus récente de vscode) pour tout exécuter
+Cliquer sur la double flèche (ou le bouton "Run all" sur la version la plus récente de vscode) pour tout exécuter.
 
 Charger la classe entrainement_avec_data_augmentation.ipynb
 
-Cliquer sur la double flèche (ou le bouton "Run all" sur la version la plus récente de vscode) pour tout exécuter
+Cliquer sur la double flèche (ou le bouton "Run all" sur la version la plus récente de vscode) pour tout exécuter.
 
 
 ## Résultats
 
 Sans la méthode data augmentation :
 
-- Sur l'enthropie croisée, au début, le train et le test sont de même valeur avant que le train diminue sa perte alors que le test parvient à conserver une valeur stable
-- De plus, la courbe de test repart à la hausse. Donc il y a surentrainement
-- Sur la Classification Accuracy, le train et le test sont de même valeur avant que le train augmente sa perte alors que le test parvient à conserver une valeur stable
-- Sur les deux graphiques : la différence du train par rapport au test est que le train a un écart deux fois plus élevé que le test
+- Sur l'enthropie croisée, au début, le train et le test sont de même valeur avant que le train diminue sa perte alors que le test parvient à conserver une valeur stable.
+- Sur l'enthropie croisée, la courbe de test commence part une diminution avant de repartir à la hausse. Cela signifie qu'il y a surentrainement.
+- Sur la Classification Accuracy, le train et le test sont de même valeur avant que le train augmente sa perte alors que le test parvient à conserver une valeur stable.
 
 Avec la méthode data augmentation :
 
-- Au milieu des epochs, le résultat est semblable que les résultats sans méthode data augmentation
-- Cependant, les valeurs entre le train et le test restent bien plus longtemps semblable avant de diverger, surtout sur la Classification Accuracy
-- De plus, sur l'enthropie croisée, la courbe de test parvient à rester stable. Donc il n'y a pas de surentrainement
+- La Classification Accuracy a le résultat semblable à celle se passant de la méthode data augmentation.
+- Cependant, les valeurs entre le train et le test restent bien plus longtemps semblable avant de diverger, surtout sur la Classification Accuracy.
+- Sur l'enthropie croisée, la courbe de test parvient à rester stable. Cela signifie qu'il n'y a pas de surentrainement.
 
-En conclusion, la méthode de data augmentation est préférable car non seulment elle permet de prévenir le surentrainement et de mieux stabilier les pertes et efficacités entre les train et les tests, mais en plus elle permet un traitement plus rapide.
+En conclusion, la méthode de data augmentation est préférable car non seulment elle permet de prévenir le surentrainement et de mieux stabiliser les pertes et efficacités entre les train et les tests, mais en plus elle permet un traitement plus rapide.
 
 
 
