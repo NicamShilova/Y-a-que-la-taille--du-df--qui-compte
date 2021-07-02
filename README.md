@@ -66,7 +66,7 @@ Sans la méthode data augmentation :
 
 Avec la méthode data augmentation :
 
-- Vers le fin des epoch, le résultat est semblable que les résultats sans méthode data augmentation
+- Au milieu des epochs, le résultat est semblable que les résultats sans méthode data augmentation
 - Cependant, les valeurs entre le train et le test restent bien plus longtemps semblable avant de diverger, surtout sur la Classification Accuracy
 - De plus, sur l'enthropie croisée, la courbe de test parvient à rester stable. Donc il n'y a pas de surentrainement
 
